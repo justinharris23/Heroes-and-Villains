@@ -8,13 +8,15 @@
 Not just one of the greatest Beach Boys songs, Heroes and Villains is your one-stop shop to learn about your favorite heroes and villains. From Superman, Lex Luthor, Spider-Man, and Venom, all the way to Luke Skywalker and Darth Vader. Even Indiana Jones!
 
 ## How to Get Started
-- Search Bar
-- Type in Character name, which include predictive typing
-- Once you click search you will lorem ipsum lorem ipsum 
+- Type in your favorite hero or villain and click the Search button
+- If you're unsure how to spell your characters, start typing in the search box and predictive results will appear. Choose one of the results.
+- An image of your character next to your characters statistics will be displayed
+- On intial page load, a Featured Character will be displayed
+- Clicking the Search button without any character name in the search area will return a random character
 
 **Character Statistics**
-Lorem Ipsum Lorem Ipsum 
-- Character Name 
+Here is the list of character information that will be displayed. The image will appear on the left side, all other information will appear on the right side. 
+- Image (left side)
 - Image
 - Lorem Ipsum
 - Lorem Ipsum
@@ -22,10 +24,20 @@ Lorem Ipsum Lorem Ipsum
 - Lorem Ipsum
 - Lorem Ipsum
 
+
+Intelligence
+Strength
+Speed
+Power
+Full Name (example, if you choose Batman. This characters full name (or real name) is Bruce Wayne
+Alignment: either good (hero) or bad (villain)
+Base of Operation: using the Batman example, this would be the Batcave
+Groups: using the Batman example, this would be The Batman Family, and the Justice League 
+
 ![card](http://4.bp.blogspot.com/-TAI9vTxZCSE/VXNdWq9Q9uI/AAAAAAAACCA/D7PTMtbb1sA/s1600/Captain%2BAmerica%2B1990%2BCard.jpg)
 
 ### **Wireframes
-See attached
+https://wireframe.cc/pro/edit/590959
 
 
 ## Trello Board
