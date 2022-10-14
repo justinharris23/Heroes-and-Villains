@@ -29,12 +29,16 @@ See attached
 
 
 ## Trello Board
-Link - 
+Link - https://trello.com/b/PKqBziKS/project-1-heroes-and-villains
+
 ## Post-MVP Ideas
 - Add a dark mode feature
 - Use object oriented programming to create reusable elements
 - Use Google Fonts in your project. To do this, find a font on [Google Fonts](https://fonts.google.com/) , select the font, go to the *embed* link, and put its HTML tag in your HTML document's `<head>` tag, *above* your link to your CSS. You will then need to use its CSS Rule to apply it in your CSS file.
 
 ## Other-MVP Ideas
-- Have the characters/cards battle, so this becomes Heroes vs Villians
-- More goes here
+- Have the characters/cards battle, so this becomes more of a game called Heroes vs Villains
+- For Heroes vs Villains, the user would search two characters to battle. 
+- Two cards would get displayed side by side and there would be a Battle button
+- Clicking the Battle button would allow compare each characters "Power" stat
+- The charater with the highest "Power" would be declared the winner
