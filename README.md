@@ -17,22 +17,15 @@ Not just one of the greatest Beach Boys songs, Heroes and Villains is your one-s
 **Character Statistics**
 Here is the list of character information that will be displayed. The image will appear on the left side, all other information will appear on the right side. 
 - Image (left side)
-- Image
-- Lorem Ipsum
-- Lorem Ipsum
-- Lorem Ipsum
-- Lorem Ipsum
-- Lorem Ipsum
-
-
-Intelligence
-Strength
-Speed
-Power
-Full Name (example, if you choose Batman. This characters full name (or real name) is Bruce Wayne
-Alignment: either good (hero) or bad (villain)
-Base of Operation: using the Batman example, this would be the Batcave
-Groups: using the Batman example, this would be The Batman Family, and the Justice League 
+- Intelligence
+- Strength
+- Speed
+- Power
+- Height and Weight
+- Full Name (example, if you choose Batman. This characters full name (or real name) is Bruce Wayne
+- Alignment: either good (hero) or bad (villain)
+- Base of Operation: using the Batman example, this would be the Batcave
+- Groups: using the Batman example, this would be The Batman Family, and the Justice League 
 
 ![card](http://4.bp.blogspot.com/-TAI9vTxZCSE/VXNdWq9Q9uI/AAAAAAAACCA/D7PTMtbb1sA/s1600/Captain%2BAmerica%2B1990%2BCard.jpg)
 
