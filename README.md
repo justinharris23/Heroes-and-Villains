@@ -29,8 +29,8 @@ Here is the list of character information that will be displayed. The image will
 
 ![card](http://4.bp.blogspot.com/-TAI9vTxZCSE/VXNdWq9Q9uI/AAAAAAAACCA/D7PTMtbb1sA/s1600/Captain%2BAmerica%2B1990%2BCard.jpg)
 
-### **Wireframes
-https://wireframe.cc/pro/edit/590959
+### Wireframes
+https://tinyurl.com/2hbxv7ue
 
 
 ### Trello Board
