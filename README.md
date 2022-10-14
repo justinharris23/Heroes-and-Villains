@@ -30,7 +30,7 @@ Here is the list of character information that will be displayed. The image will
 ![card](http://4.bp.blogspot.com/-TAI9vTxZCSE/VXNdWq9Q9uI/AAAAAAAACCA/D7PTMtbb1sA/s1600/Captain%2BAmerica%2B1990%2BCard.jpg)
 
 ### Wireframes
-https://tinyurl.com/2hbxv7ue
+https://i.imgur.com/uwteaEk.png
 
 
 ### Trello Board
