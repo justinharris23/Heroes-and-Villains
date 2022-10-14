@@ -31,6 +31,7 @@ Here is the list of character information that will be displayed. The image will
 
 ### Wireframes
 ![image](https://i.imgur.com/uwteaEk.png)
+Link - https://wireframe.cc/pro/edit/590959
 
 ### Trello Board
 Link - https://trello.com/b/PKqBziKS/project-1-heroes-and-villains
