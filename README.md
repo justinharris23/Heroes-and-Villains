@@ -5,7 +5,7 @@
 ## Project Title: Heroes and Villains
 
 ## Description
-Not just one of the greatest Beach Boys songs, Heroes and Villains is your one-stop shop to learn about your favorite heroes and villains. From Superman, Lex Luthor, Spider-Man, and Venom, all the way to Luke Skywalker and Darth Vader. Even Indiana Jones!
+Not just one of the greatest Beach Boys songs, Heroes and Villains is your one-stop shop to learn about your favorite heroes and villains. Using the SuperHero API (https://superheroapi.com/ids.html), learn about over 500 characters. From Superman, Lex Luthor, Spider-Man, and Venom, all the way to Luke Skywalker and Darth Vader. Even Indiana Jones!
 
 ## How to Get Started
 - Type in your favorite hero or villain and click the Search button
