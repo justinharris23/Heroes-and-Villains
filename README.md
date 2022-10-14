@@ -14,7 +14,7 @@ Not just one of the greatest Beach Boys songs, Heroes and Villains is your one-s
 - On intial page load, a Featured Character will be displayed
 - Clicking the Search button without any character name in the search area will return a random character
 
-**Character Statistics**
+# Character Statistics**
 Here is the list of character information that will be displayed. The image will appear on the left side, all other information will appear on the right side. 
 - Image (left side)
 - Intelligence
