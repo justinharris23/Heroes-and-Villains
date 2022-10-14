@@ -2,8 +2,8 @@
 
 let button = document.querySelector("#searchButton");
 const bbName = document.querySelector("#bbName");
-const bbStats = document.querySelector("#bbStats");
 const bbImage = document.querySelector("#bbImage");
+const bbBirthday = document.querySelector("#bbBirthday");
 
 //req and res
 //request and response
@@ -23,7 +23,7 @@ async function getData(event) {
       bbName.innerText = res[0].name;
       bbImage.setAttribute("src", res[0].img);
       bbInfo.innerText = `${res.height}: ft and ${res.weight} lbs`;
-      // bbBio.innerText = bbGroup.innerText = console.log(res.sprites);
+      //bbBio.innerText = bbGroup.innerText = console.log(res.sprites);
     })
     .catch((err) => {
       console.log("error!", err);
