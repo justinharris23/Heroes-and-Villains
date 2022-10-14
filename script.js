@@ -1,9 +1,9 @@
-console.log("working");
+//console.log("working");
 
 let button = document.querySelector("#searchButton");
-const heroName = document.querySelector("#heroName");
-const heroStats = document.querySelector("#heroStats");
-const heroImage = document.querySelector("#heroImage");
+const bbName = document.querySelector("#bbName");
+const bbStats = document.querySelector("#bbStats");
+const bbImage = document.querySelector("#bbImage");
 
 //req and res
 //request and response
@@ -14,25 +14,24 @@ async function getData(event) {
   event.preventDefault();
   let textInput = document.querySelector("#inputBar").value;
 
-  fetch(`https://pokeapi.co/api/v2/pokemon/${textInput}`)
+  fetch(`https://www.breakingbadapi.com/api/characters/${textInput}`)
     .then((res) => {
       return res.json();
     })
     .then((res) => {
-      console.log("success!", res.name);
-      heroName.innerText = res.name;
-      heroStats.innerText = `${res.height}: feet and ${res.weight} lbs`;
-      heroImage.setAttribute("src", res.sprites.front_shiny);
-
-      console.log(res.sprites);
+      console.log(res[0].name);
+      bbName.innerText = res[0].name;
+      bbImage.setAttribute("src", res[0].img);
+      bbInfo.innerText = `${res.height}: ft and ${res.weight} lbs`;
+      // bbBio.innerText = bbGroup.innerText = console.log(res.sprites);
     })
     .catch((err) => {
       console.log("error!", err);
     });
 }
 
-//1 Attach Even to Button
-//button.addEventListener("click", getData);
+//1 Attach Event to Button
+button.addEventListener("click", getData);
 
 //2 Read the input bar variable/value
 //3 Find the HTML Element we want to populate
