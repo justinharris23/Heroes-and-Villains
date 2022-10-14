@@ -1,9 +1,22 @@
 body{
-  margin: auto
+  max-width: 500px;
+  margin: auto;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 
-.searchBar
+#searchBar
 {
-
+  width: 50%;
+  display: flex;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid black;
+  color: #111;
+  font-size: 15px;
+  box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+  height: 25px;    
   
 }
