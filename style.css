@@ -8,7 +8,10 @@ body{
   padding: 0;
   background-color: white;
   background-image: url('https://images6.alphacoders.com/321/thumb-1920-321927.jpg');
+  cursor: url('./assets/rainbow.png') 2 2, pointer;
+ 
 }
+
 
 h1 {
   display:flex;
@@ -28,6 +31,7 @@ h1 {
 #inputBar
 {
   width: 20%;
+  display: flex;
   background-color: white;
   border: 1px solid black;
   color: #111;
@@ -56,14 +60,22 @@ h2 {
 
 
 
-#img {
-border-radius: 20px;
-display:flex;
-justify-content:center;
+#bbImage {
+border-radius: 10px;
 }
 
+#imageContainer
+{
+  display:flex;
+  justify-content:center;
+}
 
 h6 {
+  display:flex;
+  justify-content:center;
+}
+
+#random {
   display:flex;
   justify-content:center;
 }
