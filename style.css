@@ -52,19 +52,21 @@ h2 {
   display:flex;
   justify-content:center;
   color: white;
+  text-shadow: 1px 1px #000000;
 }
 
+
+
+
 #bbName {
-  color: greenyellow;
+  color: #38995A
    }
-
-
 
 
 #bbImage {
 border-radius: 10px;
-max-height: 600px;
-max-width: 1000px;
+/* max-height: 600px;
+max-width: 1000px; */
 }
 
 #imageContainer
@@ -73,14 +75,36 @@ max-width: 1000px;
   justify-content:center;
 }
 
+
+
+.bbStats{
+  display:flex;
+  justify-content:center;
+  
+}
+
+
+.bbInfo
+{
+  background-color: #032202;
+  opacity: 0;
+  width: 50%;
+  margin-top: 20px;
+  
+}
+
 h6 {
   display:flex;
   justify-content:center;
 }
 
+
 #random {
   display:flex;
   justify-content:center;
+  margin-bottom: 10px;
 }
+
+
 
 

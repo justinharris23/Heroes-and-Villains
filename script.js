@@ -8,9 +8,6 @@ const bbNickname = document.querySelector("#bbNickname");
 const bbOccupation = document.querySelector("#bbOccupation");
 const bbPortrayed = document.querySelector("#bbPortrayed");
 
-//req and res
-//request and response
-
 //use Event as a parameter
 async function getData(event) {
   //preventing the default behavior of the browser
@@ -72,3 +69,8 @@ randomButton.addEventListener("click", getRandom);
 // onload = getRandom();
 //onload = (getRandom) => { };
 window.location.onload(getRandom);
+
+//On Click Make the Box appear behind the bbInfo
+let bbInfo = document.querySelector(".bbInfo").addEventListener("click", () => {
+  bbInfo.style.opacity = 50;
+});
