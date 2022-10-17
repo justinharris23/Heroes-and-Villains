@@ -7,6 +7,7 @@ const bbBirthday = document.querySelector("#bbBirthday");
 const bbNickname = document.querySelector("#bbNickname");
 const bbOccupation = document.querySelector("#bbOccupation");
 const bbPortrayed = document.querySelector("#bbPortrayed");
+const bbInfo = document.querySelector(".bbInfo");
 
 //use Event as a parameter
 async function getData(event) {
@@ -27,6 +28,7 @@ async function getData(event) {
       bbNickname.innerText = `Nickname: ${res[0].nickname}`;
       bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
       bbPortrayed.innerText = `Birthdate: ${res[0].portrayed}`;
+      bbInfo.style.opacity = 0.75;
     })
     .catch((err) => {
       console.log("error!", err);
@@ -56,7 +58,8 @@ async function getRandom(event) {
       bbBirthday.innerText = `Birthdate: ${res[0].birthday}`;
       bbNickname.innerText = `Nickname: ${res[0].nickname}`;
       bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
-      bbPortrayed.innerText = `Birthdate: ${res[0].portrayed}`;
+      bbPortrayed.innerText = `Portrayed by: ${res[0].portrayed}`;
+      bbInfo.style.opacity = 0.75;
     })
     .catch((err) => {
       console.log("error!", err);
@@ -69,8 +72,3 @@ randomButton.addEventListener("click", getRandom);
 // onload = getRandom();
 //onload = (getRandom) => { };
 window.location.onload(getRandom);
-
-//On Click Make the Box appear behind the bbInfo
-let bbInfo = document.querySelector(".bbInfo").addEventListener("click", () => {
-  bbInfo.style.opacity = 50;
-});
