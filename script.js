@@ -5,6 +5,8 @@ let randomButton = document.querySelector("#random");
 const bbName = document.querySelector("#bbName");
 const bbBirthday = document.querySelector("#bbBirthday");
 const bbNickname = document.querySelector("#bbNickname");
+const bbOccupation = document.querySelector("#bbOccupation");
+const bbPortrayed = document.querySelector("#bbPortrayed");
 
 //req and res
 //request and response
@@ -21,21 +23,21 @@ async function getData(event) {
     })
     .then((res) => {
       //console.log(res[0].name);
-      bbName.innerHTML = `Name: ${res[0].name}`;
+      bbName.innerHTML = `${res[0].name}`;
       // bbName.innerHTML = `Name: ${res[0].name}`;
       bbImage.setAttribute("src", res[0].img);
-      bbBirthday.innerText = `Birthdate: ${res[0].bbBirthday}`;
-      bbNickname.innerText = `Nickname: ${res[0].bbNickname}`;
-      bbOccupation.innerText = `Occupation: ${res[0].bbOccupation}`;
-      bbPortrayed.innerText = `Birthdate: ${res[0].bbPortrayed}`;
+      bbBirthday.innerText = `Birthdate: ${res[0].birthday}`;
+      bbNickname.innerText = `Nickname: ${res[0].nickname}`;
+      bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
+      bbPortrayed.innerText = `Birthdate: ${res[0].portrayed}`;
     })
     .catch((err) => {
       console.log("error!", err);
     });
 }
 
+//Function that randomizes the character that appears
 async function getRandom(event) {
-  //preventing the default behavior of the browser
   event.preventDefault();
   let textInput = null;
   function getRandomnumber(min, max) {
@@ -51,13 +53,13 @@ async function getRandom(event) {
     })
     .then((res) => {
       //console.log(res[0].name);
-      bbName.innerHTML = `Name: ${res[0].name}`;
+      bbName.innerHTML = `${res[0].name}`;
       // bbName.innerHTML = `Name: ${res[0].name}`;
       bbImage.setAttribute("src", res[0].img);
-      bbBirthday.innerText = `Birthdate: ${res[0].bbBirthday}`;
-      bbNickname.innerText = `Nickname: ${res[0].bbNickname}`;
-      bbOccupation.innerText = `Occupation: ${res[0].bbOccupation}`;
-      bbPortrayed.innerText = `Birthdate: ${res[0].bbPortrayed}`;
+      bbBirthday.innerText = `Birthdate: ${res[0].birthday}`;
+      bbNickname.innerText = `Nickname: ${res[0].nickname}`;
+      bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
+      bbPortrayed.innerText = `Birthdate: ${res[0].portrayed}`;
     })
     .catch((err) => {
       console.log("error!", err);
@@ -70,7 +72,3 @@ randomButton.addEventListener("click", getRandom);
 // onload = getRandom();
 //onload = (getRandom) => { };
 window.location.onload(getRandom);
-
-//2 Read the input bar variable/value
-//3 Find the HTML Element we want to populate
-//4 Populate Element, Render Data on screen
