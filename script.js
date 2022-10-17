@@ -22,7 +22,6 @@ async function getData(event) {
     .then((res) => {
       //console.log(res[0].name);
       bbName.innerHTML = `${res[0].name}`;
-      // bbName.innerHTML = `Name: ${res[0].name}`;
       bbImage.setAttribute("src", res[0].img);
       bbBirthday.innerText = `Birthdate: ${res[0].birthday}`;
       bbNickname.innerText = `Nickname: ${res[0].nickname}`;
@@ -53,13 +52,14 @@ async function getRandom(event) {
     .then((res) => {
       //console.log(res[0].name);
       bbName.innerHTML = `${res[0].name}`;
-      // bbName.innerHTML = `Name: ${res[0].name}`;
       bbImage.setAttribute("src", res[0].img);
       bbBirthday.innerText = `Birthdate: ${res[0].birthday}`;
       bbNickname.innerText = `Nickname: ${res[0].nickname}`;
       bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
       bbPortrayed.innerText = `Portrayed by: ${res[0].portrayed}`;
       bbInfo.style.opacity = 0.75;
+      bbMore1.setAttribute("src", res[0].img);
+      bbMore2.setAttribute("src", res[0].img);
     })
     .catch((err) => {
       console.log("error!", err);
