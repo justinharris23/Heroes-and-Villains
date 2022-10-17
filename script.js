@@ -36,7 +36,6 @@ async function getData(event) {
 
 //Function that randomizes the character that appears
 async function getRandom(event) {
-  event.preventDefault();
   let textInput = null;
   function getRandomnumber(min, max) {
     min = Math.ceil(1);
@@ -58,8 +57,6 @@ async function getRandom(event) {
       bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
       bbPortrayed.innerText = `Portrayed by: ${res[0].portrayed}`;
       bbInfo.style.opacity = 0.75;
-      bbMore1.setAttribute("src", res[0].img);
-      bbMore2.setAttribute("src", res[0].img);
     })
     .catch((err) => {
       console.log("error!", err);
@@ -71,4 +68,25 @@ button.addEventListener("click", getData);
 randomButton.addEventListener("click", getRandom);
 // onload = getRandom();
 //onload = (getRandom) => { };
-window.location.onload(getRandom);
+getRandom();
+
+async function starterImage1() {
+  let textInput = null;
+  function getRandomnumber(min, max) {
+    min = Math.ceil(1);
+    max = Math.floor(62);
+    textInput = Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  getRandomnumber();
+
+  fetch(`https://www.breakingbadapi.com/api/characters/${textInput}`)
+    .then((res) => {
+      return res.json();
+    })
+    .then((res) => {
+      let bbMore1 = document.querySelector("#bbMore1");
+      console.log(res);
+      bbMore1.setAttribute("src", res[0].img);
+    });
+}
+starterImage1();

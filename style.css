@@ -9,7 +9,9 @@ body{
   background-color: white;
   background-image: url('https://images6.alphacoders.com/321/thumb-1920-321927.jpg');
   cursor: url('./assets/rainbow.png') 2 2, pointer;
- 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 
