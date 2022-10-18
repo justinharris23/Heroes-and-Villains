@@ -8,6 +8,7 @@ const bbNickname = document.querySelector("#bbNickname");
 const bbOccupation = document.querySelector("#bbOccupation");
 const bbPortrayed = document.querySelector("#bbPortrayed");
 const bbInfo = document.querySelector(".bbInfo");
+// let input = document.getElement("#inputBar");
 
 //use Event as a parameter
 async function getData(event) {
@@ -70,6 +71,17 @@ randomButton.addEventListener("click", getRandom);
 //onload = (getRandom) => { };
 getRandom();
 
+//Have Search work on keyboard "enter" button
+// input.addEventListener("keypress", function (event) {
+//   // If the user presses the "Enter" key on the keyboard
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     // Trigger the button element with a click
+//     getData();
+//   }
+// });
+
+//Randomize Images and pull in other smaller character image 1
 async function starterImage1() {
   let textInput = null;
   function getRandomnumber(min, max) {
@@ -90,3 +102,25 @@ async function starterImage1() {
     });
 }
 starterImage1();
+
+//Randomize Images and pull in other smaller character image 2
+async function starterImage2() {
+  let textInput = null;
+  function getRandomnumber(min, max) {
+    min = Math.ceil(1);
+    max = Math.floor(62);
+    textInput = Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  getRandomnumber();
+
+  fetch(`https://www.breakingbadapi.com/api/characters/${textInput}`)
+    .then((res) => {
+      return res.json();
+    })
+    .then((res) => {
+      let bbMore2 = document.querySelector("#bbMore2");
+      console.log(res);
+      bbMore1.setAttribute("src", res[0].img);
+    });
+}
+starterImage2();
