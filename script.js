@@ -8,7 +8,7 @@ const bbNickname = document.querySelector("#bbNickname");
 const bbOccupation = document.querySelector("#bbOccupation");
 const bbPortrayed = document.querySelector("#bbPortrayed");
 const bbInfo = document.querySelector(".bbInfo");
-// let input = document.getElement("#inputBar");
+//let input = document.getElement("#inputBar");
 
 //use Event as a parameter
 async function getData(event) {
