@@ -96,7 +96,8 @@ justify-content:center;
 .bbInfo
 {
   background-color: #032202;
-  opacity: 0;
+  display: none;
+  opacity: .75;
   width: 30%;
   margin-top: 10px;
   font-size: 15px;
@@ -105,10 +106,11 @@ justify-content:center;
   margin-left: 15px;
 }
 
-h6 {
+h5 {
   display:flex;
   justify-content:center;
   color: white;
+  padding-bottom: 10px;
 }
 
 

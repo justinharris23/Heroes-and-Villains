@@ -27,8 +27,8 @@ async function getData(event) {
       bbBirthday.innerText = `Birthdate: ${res[0].birthday}`;
       bbNickname.innerText = `Nickname: ${res[0].nickname}`;
       bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
-      bbPortrayed.innerText = `Birthdate: ${res[0].portrayed}`;
-      bbInfo.style.opacity = 0.75;
+      bbPortrayed.innerText = `Portrayed by: ${res[0].portrayed}`;
+      bbInfo.style.display = "block";
     })
     .catch((err) => {
       console.log("error!", err);
@@ -57,7 +57,7 @@ async function getRandom(event) {
       bbNickname.innerText = `Nickname: ${res[0].nickname}`;
       bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
       bbPortrayed.innerText = `Portrayed by: ${res[0].portrayed}`;
-      bbInfo.style.opacity = 0.75;
+      bbInfo.style.display = "block";
     })
     .catch((err) => {
       console.log("error!", err);
