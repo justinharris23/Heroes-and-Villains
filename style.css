@@ -39,14 +39,14 @@ h1 {
   color: #111;
   font-size: 15px;
   box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
-  height: 25px;    
+  height: 30px;    
 }
 
 #searchButton
 {
 border-radius: 5px;
 box-shadow: 1px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0);
-margin-left: 10px;
+margin-left: 15px;
 }
 
 
@@ -56,6 +56,8 @@ h2 {
   color: white;
   text-shadow: 1px 1px #000000;
   font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
+   margin-bottom: 15px;
 
 }
 
@@ -64,6 +66,7 @@ h2 {
 
 #bbName {
   color: white;
+  font-size: 50px;
    }
 
 
@@ -99,7 +102,7 @@ justify-content:center;
   display: none;
   opacity: .75;
   width: 30%;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 15px;
   border-radius: 10px;
   text-align: center;
@@ -117,14 +120,45 @@ h5 {
 .randomize{
   display:flex;
   justify-content:center;
-  margin: 10px;
+  margin: 20px;
 }
 
+#moreTitle {
+  display:flex;
+  justify-content:center;
+  font-style: bold;
+  font-size: 35px;
+  margin-top: 10px;
+  color:white;
+  text-shadow: 1px 1px #000000;
+
+}
+
+.moreCharacters img{
+  display:flex;
+  justify-content:center;
+  gap: 20px;
+  outline: 0;
+  object-fit: cover;
+
+}
 .moreCharacters {
   display:flex;
   justify-content:center;
   gap: 20px;
+  outline: 0;
+  border-style: none;
+  border-bottom: none; 
+  border-top: none;
+  padding: 0; 
 }
+
+.moreCharacters button{
+  outline: 0;
+  border-style: none;
+  border-bottom: none; 
+  border-top: none;
+  padding: 0; }
 
 
 .button-3 {
