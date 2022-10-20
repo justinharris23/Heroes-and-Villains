@@ -27,8 +27,8 @@ Here is the list of character information that will be displayed. The image will
 ### Wireframes
 
 ![image](https://i.imgur.com/uwteaEk.png)
+
 Link - https://wireframe.cc/pro/edit/590959
-These were the original wireframes when the initial plan was to use a Super Hero and Super Villians api. The current version of the site is similiar with the stats/information area appearing underneath the image.
 
 ### Trello Board
 
