@@ -1,49 +1,51 @@
-# Project 1 -  Heroes and Villains
+# Project 1 - Heroes and Villains
 
 ![image](http://www.philnyjaycees.org/uploads/7/4/5/4/7454972/heroes-and-villains_orig.jpeg)
 
 ## Project Title: Heroes and Villains
 
 ## Description
-Not just one of the greatest Beach Boys songs, Heroes and Villains is your one-stop shop to learn about your favorite heroes and villains. Using the SuperHero API (https://superheroapi.com/ids.html), learn about over 500 characters. From Superman, Lex Luthor, Spider-Man, and Venom, all the way to Luke Skywalker and Darth Vader. Even Indiana Jones!
+
+Heroes and Villains is your one-stop shop to learn about your favorite heroes and villains from the television show Breaking Bad. Using the Breaking Bad API (https://breakingbadapi.com/documentation), learn about over 60 characters. From Walter White to baby Holly.
 
 ## How to Get Started
-- Type in your favorite hero or villain and click the Search button
-- If you're unsure how to spell your characters, start typing in the search box and predictive results will appear. Choose one of the results.
-- An image of your character next to your characters statistics will be displayed
-- On intial page load, a Featured Character will be displayed
-- Clicking the Search button without any character name in the search area will return a random character
+
+- Type in your favorite characters name and click the Search button or click the "enter" button your keyboard.
+- An image and information of the character will be displayed
+- Clicking the Randomize button without any character name in the search area will return a random character
 
 ## Character Statistics
-Here is the list of character information that will be displayed. The image will appear on the left side, all other information will appear on the right side. 
-- Image (left side)
-- Intelligence
-- Strength
-- Speed
-- Power
-- Height and Weight
-- Full Name (example, if you choose Batman. This characters full name (or real name) is Bruce Wayne
-- Alignment: either good (hero) or bad (villain)
-- Base of Operation: using the Batman example, this would be the Batcave
-- Groups: using the Batman example, this would be The Batman Family, and the Justice League 
 
-![card](http://4.bp.blogspot.com/-TAI9vTxZCSE/VXNdWq9Q9uI/AAAAAAAACCA/D7PTMtbb1sA/s1600/Captain%2BAmerica%2B1990%2BCard.jpg)
+Here is the list of character information that will be displayed. The image will appear on the top side, all other information will appear under the image.
+
+- Image
+- Birthdate
+- Nickname
+- Occupation
+- Portrayed By
 
 ### Wireframes
+
 ![image](https://i.imgur.com/uwteaEk.png)
 Link - https://wireframe.cc/pro/edit/590959
+These were the original wireframes when the initial plan was to use a Super Hero and Super Villians api. The current version of the site is similiar with the stats/information area appearing underneath the image.
 
 ### Trello Board
+
 Link - https://trello.com/b/PKqBziKS/project-1-heroes-and-villains
 
 ## Post-MVP Ideas
-- Add a dark mode feature
-- Use object oriented programming to create reusable elements
-- Use Google Fonts in your project. To do this, find a font on [Google Fonts](https://fonts.google.com/) , select the font, go to the *embed* link, and put its HTML tag in your HTML document's `<head>` tag, *above* your link to your CSS. You will then need to use its CSS Rule to apply it in your CSS file.
 
-## Other-MVP Ideas
-- Have the characters/cards battle, so this becomes more of a game called Heroes vs Villains
-- For Heroes vs Villains, the user would search two characters to battle. 
-- Two cards would get displayed side by side and there would be a Battle button
-- Clicking the Battle button would allow compare each characters "Power" stat
-- The charater with the highest "Power" would be declared the winner
+- Add a customer cursor
+- Add a More Characters area
+- Make the More Characters buttons and have them clickable
+- Make a button to change the background image
+- Create a full on dark mode that changes more elements of the css
+- Pull in a quote from each character, the API, had this setup differently than the main character one, so we'd have to connect them somehow
+- Make the images do more when hover over them
+- Pull in a tv show clips from another API
+- Intro animation with Breaking Bad sounds/audio
+
+## Sources
+
+-

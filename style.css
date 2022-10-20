@@ -76,6 +76,7 @@ h2 {
 #bbImage {
 border-radius: 10px;
 object-fit: cover;
+border: 1px solid black;
 }
 
 #imageContainer
@@ -117,9 +118,12 @@ h5 {
   display:flex;
   justify-content:center;
   color: white;
-  padding-bottom: 10px;
+  /* margin-bottom: 5px; */
 }
 
+.newBackground{
+  margin-bottom: 15px;
+}
 
 .randomize{
   display:flex;
@@ -144,6 +148,8 @@ h5 {
   gap: 20px;
   outline: 0;
   object-fit: cover;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
 
 }
 .moreCharacters {
@@ -165,7 +171,7 @@ h5 {
 
   a:link, a:visited {
     color: white;
-    padding: 14px 25px;
+    /* padding: 14px 5px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
