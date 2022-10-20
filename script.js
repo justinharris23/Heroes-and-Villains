@@ -10,6 +10,14 @@ const bbPortrayed = document.querySelector("#bbPortrayed");
 const bbInfo = document.querySelector(".bbInfo");
 let input = document.getElementById("inputBar");
 
+function myFunction() {
+  document.getElementById("body").style.backgroundImage =
+    "url(assets/bbbackground2.png)";
+}
+
+// document.getElementById("body").style.backgroundImage =
+//   "url('')";
+
 //use Event as a parameter
 async function getData(event) {
   //preventing the default behavior of the browser
@@ -34,6 +42,31 @@ async function getData(event) {
       console.log("error!", err);
     });
 }
+
+/////
+///When you click a More Character button that character displays and the other images change
+/////
+async function getSpecific(id) {
+  fetch(`https://www.breakingbadapi.com/api/characters/${id}`)
+    .then((res) => {
+      return res.json();
+    })
+    .then((res) => {
+      console.log(res);
+      bbName.innerHTML = `${res[0].name}`;
+      bbImage.setAttribute("src", res[0].img);
+      bbBirthday.innerText = `Birthdate: ${res[0].birthday}`;
+      bbNickname.innerText = `Nickname: ${res[0].nickname}`;
+      bbOccupation.innerText = `Occupation: ${res[0].occupation}`;
+      bbPortrayed.innerText = `Portrayed by: ${res[0].portrayed}`;
+      bbInfo.style.display = "block";
+    })
+    .catch((err) => {
+      console.log("error!", err);
+    });
+}
+///////
+//////
 
 //Function that randomizes the character that appears
 async function getRandom(event) {
@@ -62,14 +95,21 @@ async function getRandom(event) {
     .catch((err) => {
       console.log("error!", err);
     });
+  starterImage1();
+  starterImage2();
+  starterImage3();
+  starterImage4();
 }
 
 //1 Attach Event to Button
 button.addEventListener("click", getData);
 randomButton.addEventListener("click", getRandom);
+
 //getRandom();
 
-//Randomize Images and pull in other smaller character image 1
+//Function that randomizes More Character images
+
+//Randomize Images and pull in a smaller character image 1
 async function starterImage1() {
   let textInput = null;
   function getRandomnumber(min, max) {
@@ -87,6 +127,9 @@ async function starterImage1() {
       let bbMore1 = document.querySelector("#bbMore1");
       console.log(res);
       bbMore1.setAttribute("src", res[0].img);
+      bbMore1.addEventListener("click", function () {
+        getSpecific(res[0].char_id);
+      });
     });
 }
 starterImage1();
@@ -109,6 +152,9 @@ async function starterImage2() {
       let bbMore2 = document.querySelector("#bbMore2");
       console.log(res);
       bbMore2.setAttribute("src", res[0].img);
+      bbMore2.addEventListener("click", function () {
+        getSpecific(res[0].char_id);
+      });
     });
 }
 starterImage2();
@@ -131,6 +177,9 @@ async function starterImage3() {
       let bbMore3 = document.querySelector("#bbMore3");
       console.log(res);
       bbMore3.setAttribute("src", res[0].img);
+      bbMore3.addEventListener("click", function () {
+        getSpecific(res[0].char_id);
+      });
     });
 }
 starterImage3();
@@ -151,8 +200,11 @@ async function starterImage4() {
     })
     .then((res) => {
       let bbMore4 = document.querySelector("#bbMore4");
-      console.log(res);
+      console.log(bbMore4);
       bbMore4.setAttribute("src", res[0].img);
+      bbMore4.addEventListener("click", function () {
+        getSpecific(res[0].char_id);
+      });
     });
 }
 starterImage4();
@@ -166,3 +218,8 @@ input.addEventListener("keypress", (event) => {
     button.click();
   }
 });
+
+//////
+//////
+
+/////
