@@ -10,13 +10,18 @@ const bbPortrayed = document.querySelector("#bbPortrayed");
 const bbInfo = document.querySelector(".bbInfo");
 let input = document.getElementById("inputBar");
 
-function myFunction() {
-  document.getElementById("body").style.backgroundImage =
-    "url(assets/bbbackground2.png)";
-}
+// function myFunction() {
+//   document.getElementById("body").style.backgroundImage =
+//     "url(assets/bbbackground2.png)";
+// }
 
 // document.getElementById("body").style.backgroundImage =
 //   "url('')";
+
+function myFunction() {
+  // document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.backgroundImage = "url('assets/bbbackground2.png')";
+}
 
 //use Event as a parameter
 async function getData(event) {
