@@ -13,10 +13,6 @@ let backgroundAbc = document.querySelector(".newBackground");
 let body = document.querySelector("body");
 
 //change background image on button click
-// function myFunction() {
-//   document.body.style.backgroundImage = "url('assets/bbbackground2.png')";
-// }
-
 backgroundAbc.addEventListener("click", () => {
   body.classList.toggle("newB");
 });
@@ -108,10 +104,7 @@ async function getRandom(event) {
 button.addEventListener("click", getData);
 randomButton.addEventListener("click", getRandom);
 
-//getRandom();
-
 //Function that randomizes More Character images
-
 //Randomize Images and pull in a smaller character image 1
 async function starterImage1() {
   let textInput = null;
@@ -223,6 +216,3 @@ input.addEventListener("keypress", (event) => {
 });
 
 //////
-//////
-
-/////

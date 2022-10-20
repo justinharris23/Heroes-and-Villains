@@ -48,4 +48,8 @@ Link - https://trello.com/b/PKqBziKS/project-1-heroes-and-villains
 
 ## Sources
 
--
+- https://breakingbadapi.com/documentation
+- https://getcssscan.com/css-buttons-examples
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://www.w3schools.com/css/css_link.asp
+- https://www.amazon.com/Heisenberg-Vinyl-Sticker-Bumper-Window/dp/B06VTW8735
