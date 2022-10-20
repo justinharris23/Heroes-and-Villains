@@ -9,19 +9,17 @@ const bbOccupation = document.querySelector("#bbOccupation");
 const bbPortrayed = document.querySelector("#bbPortrayed");
 const bbInfo = document.querySelector(".bbInfo");
 let input = document.getElementById("inputBar");
+let backgroundAbc = document.querySelector(".newBackground");
+let body = document.querySelector("body");
 
+//change background image on button click
 // function myFunction() {
-//   document.getElementById("body").style.backgroundImage =
-//     "url(assets/bbbackground2.png)";
+//   document.body.style.backgroundImage = "url('assets/bbbackground2.png')";
 // }
 
-// document.getElementById("body").style.backgroundImage =
-//   "url('')";
-
-function myFunction() {
-  // document.body.style.backgroundColor = "#f3f3f3";
-  document.body.style.backgroundImage = "url('assets/bbbackground2.png')";
-}
+backgroundAbc.addEventListener("click", () => {
+  body.classList.toggle("newB");
+});
 
 //use Event as a parameter
 async function getData(event) {

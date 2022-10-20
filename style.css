@@ -7,7 +7,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: white;
-  background-image: url('https://images6.alphacoders.com/321/thumb-1920-321927.jpg');
+  background-image: url('assets/bbackground1.jpeg');
   cursor: url(assets/heisenberg.png), pointer;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -23,6 +23,9 @@ h1 {
                                                 
 }
 
+.newB {
+  background-image: url('assets/bbbackground2.png');
+}
 
 #searchBox {
   display:flex;
@@ -72,6 +75,7 @@ h2 {
 
 #bbImage {
 border-radius: 10px;
+object-fit: cover;
 }
 
 #imageContainer
@@ -145,11 +149,10 @@ h5 {
 .moreCharacters {
   display:flex;
   justify-content:center;
-  gap: 20px;
-  outline: 0;
-  border-style: none;
-  border-bottom: none; 
-  border-top: none;
+  gap: 40px;
+  border-style: bold;
+  border: 3px;
+  border-color: #298e46;
   padding: 0; 
 }
 
@@ -159,6 +162,14 @@ h5 {
   border-bottom: none; 
   border-top: none;
   padding: 0; }
+
+  a:link, a:visited {
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
 
 
 .button-3 {
